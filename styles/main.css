@@ -1,0 +1,565 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    /*outline: 1px #111 dotted;*/
+    box-sizing: border-box;
+}
+
+p{
+    color: hsl(233, 8%, 62%);
+    font-size: 2em;
+    padding: 4rem 0;
+}
+
+html{
+    font-size: 10px;
+    height: 100%;
+    width: 100%;
+    font-family: 'Public Sans', sans-serif;
+
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+div#nav-bar{
+    display: flex;
+    height: 15%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+
+div#nav-bar a{
+    color: hsl(233, 8%, 62%);
+
+}
+
+img.hamburger-menu{
+    display: none;
+}
+
+div#nav-bar nav{
+    width: 30%;
+    font-size: 1.8em;
+    height: 100%;
+}
+
+div#nav-bar nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+
+div#nav-bar li a:hover{
+    color: hsl(233, 26%, 24%);
+}
+
+.description button{
+    margin-bottom: 10rem;
+}
+
+button.request-invite{
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 15rem;
+    height: 4rem;
+    border-radius: 25px;
+    color: white;
+    background: -webkit-linear-gradient(top left, #31D35C, #2BB7DA);
+    background: -moz-linear-gradient(top left, #31D35C, #2BB7DA);
+    background: linear-gradient(to bottom right, #31D35C, #2BB7DA);
+}
+
+div#intro{
+    display: flex;
+    width: 100%;
+    background-color:  hsl(0, 0%, 98%);
+    z-index: -1;
+    position: relative;
+}
+
+
+div.description{
+    width: 40%;
+    padding:30rem 0 30rem 12rem;
+    position: relative;
+    word-wrap: break-word;
+}
+
+div.description h1{
+    font-size: 6em;
+    color: hsl(233, 26%, 24%);
+    font-weight: 400;
+}
+
+
+
+div.mock-up{
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    width: 60%;
+    float: right;
+    position: relative;
+    background-size: cover;
+
+}
+
+.mock-up img{
+    position: relative;
+    width: 80%;
+    min-height: 120%;
+    bottom: 7%;
+    float: right;
+}
+
+div#info{
+    background-color:  hsl(220, 16%, 96%);
+    z-index: -2;
+    position: relative;
+    padding: 12rem;
+}
+
+div#info h2{
+    font-size: 5em;
+    color:hsl(233, 26%, 24%);
+    font-weight: 300;
+}
+
+div#info p{
+    width: 100%;
+}
+
+div.info-options{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.online-banking, div.simple-budgeting, div.fast-onboarding, div.open-api{
+    width: 23%;
+}
+
+div.info-options h3{
+    font-size: 3em;
+    color:hsl(233, 26%, 24%);
+    font-weight: 300;
+}
+
+
+div#articles{
+    background-color:hsl(0, 0%, 98%);
+    padding: 12rem;
+}
+
+
+div#articles h2{
+    font-size: 5em;
+    color:hsl(233, 26%, 24%);
+    font-weight: 300;
+    padding-bottom: 5rem;
+}
+
+
+div.article-options{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+div.article-1,div.article-2,div.article-3,div.article-4{
+    width: 20%;
+    height: 80%;
+}
+
+
+div.article-1 img, div.article-1 img,div.article-2 img,div.article-3 img,div.article-4 img{
+    max-width: 100%;
+    max-height: 30rem;
+    min-height: 20rem;
+}
+
+div.article-options h4{
+    font-size: 3em;
+    color:hsl(233, 26%, 24%);
+    font-weight: 400;
+}
+
+div#footer{
+    background-color:hsl(233, 26%, 24%);
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 12rem;
+   
+}
+
+
+div.pages{
+    display: grid;
+    width: 30%;
+}
+
+.row-1{
+    grid-row: 1;
+}
+
+.row-2{
+    grid-row: 2;
+}
+
+.row-3{
+    grid-row: 3;
+}
+
+.col-1{
+    grid-column: 1;
+}
+.col-2{
+    grid-column: 2;
+}
+
+
+div.pages a{
+    color: hsl(233, 8%, 62%);
+    font-size: 1.5em;
+    width: 100%;
+}
+
+div.social-links svg{
+   padding-top: 5rem;
+   height: 7rem;
+   width: 3rem;
+   padding-right: 1rem;
+   fill:  hsl(136, 65%, 51%);
+}
+
+
+
+
+.copyright button{
+    position: relative;
+    float: right;
+    margin-bottom: 1rem;
+}
+
+.copyright p{
+    text-align: center;
+    font-size: 1em;
+}
+
+@media screen and (max-width:700px){
+    
+    html{
+        font-size: 5px;
+        width: 100%;
+        
+    }
+
+    body{
+        width: 100%;
+    }
+    
+    div#nav-bar{
+        padding: 5rem;
+    }
+
+    img.hamburger-menu{
+        display: flex;
+        cursor: pointer;
+    }
+
+  
+    div#nav-bar nav li a{
+        line-height: 10rem;
+        color: hsl(233, 26%, 24%);
+    }
+
+    div#nav-bar nav{
+        width: 80%;
+        margin: auto;
+        position: absolute;
+    }
+
+    div#nav-bar nav ul{
+        display: none;
+        position: relative;
+        top: 60%;
+        height: auto;
+        padding: 3rem;
+        text-align: center;
+        background-color: white;
+        box-shadow: 10px 128px 232px -6px rgba(66,66,66,0.75);
+        -webkit-box-shadow: 10px 128px 232px -6px rgba(66,66,66,0.75);
+        -moz-box-shadow: 10px 128px 232px -6px rgba(66,66,66,0.75);
+    }
+
+    div#nav-bar button{
+        display: none;
+    }
+
+    div#intro, div.info-options, div.article-options {
+        display: flex;
+        flex-flow: column;
+    }
+
+  
+
+    div.description{
+        padding: 5rem 5rem;
+        width: 100%;
+        text-align: center;
+        order: 2;
+    }
+
+    div.mock-up{
+        width: 100%;
+        background-image: url(/images/bg-intro-mobile.svg);
+    }
+
+    .mock-up img{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        float: none;
+        padding-left:5%;
+        padding-right: 5%;
+        bottom:30%
+    }
+
+    button.request-invite{
+        width: 50%;
+        height: 7rem;
+    }
+
+    div#info{
+        padding: 5rem 5rem;
+        text-align: center;
+    }
+
+    div.online-banking, div.simple-budgeting, div.fast-onboarding, div.open-api{
+        width: 100%;
+    }
+
+    div#articles{
+        padding: 5rem 5rem;
+        text-align: center;
+    }
+
+    div.article-1,div.article-2,div.article-3,div.article-4{
+        width: 100%;
+        text-align: left;
+    }
+
+    div.article-1 img, div.article-1 img,div.article-2 img,div.article-3 img,div.article-4 img{
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+        min-height: 40rem;
+        max-height: 50rem;
+        padding-top: 10rem;
+    }
+
+    .blurb, .author,.title{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+   
+    div#footer{
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+    }
+
+    div.pages{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+    }
+
+    div.socials{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+
+    div.pages a{
+        text-align: center;
+        line-height: 4rem;
+    }
+
+    div.copyright{
+        display: flex;
+        flex-flow: column;
+    }
+
+    div.copyright button{
+        margin-bottom: 0;
+        margin: auto;
+        margin-top: 3rem;
+    }
+
+}
+
+@media screen and (max-width:900px) and (min-width:700px) {
+    
+    html{
+        font-size: 10px;
+        width: 100%;
+        
+    }
+
+    body{
+        width: 100%;
+    }
+    
+
+   
+    div#nav-bar{
+        padding: 5rem;
+    }
+
+    img.hamburger-menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    div#nav-bar nav li a{
+        line-height: 10rem;
+        color: hsl(233, 26%, 24%);
+    }
+
+    div#nav-bar nav{
+        width: 80%;
+        margin: auto;
+        position: absolute;
+    }
+
+    div#nav-bar nav ul{
+        display: none;
+        position: relative;
+        top: 60%;
+        height: auto;
+        padding: 3rem;
+        text-align: center;
+        background-color: white;
+        box-shadow: 10px 128px 232px -6px rgba(66,66,66,0.75);
+        -webkit-box-shadow: 10px 128px 232px -6px rgba(66,66,66,0.75);
+        -moz-box-shadow: 10px 128px 232px -6px rgba(66,66,66,0.75);
+    }
+
+    div#nav-bar button{
+        display: none;
+    }
+
+
+    div#intro, div.info-options, div.article-options {
+        display: flex;
+        flex-flow: column;
+    }
+
+  
+
+    div.description{
+        padding: 5rem 5rem;
+        width: 100%;
+        text-align: center;
+        order: 2;
+    }
+
+    div.mock-up{
+        width: 100%;
+        background-image: url(/images/bg-intro-mobile.svg);
+    }
+
+    .mock-up img{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        float: none;
+        padding-left:5%;
+        padding-right: 5%;
+        bottom:30%
+    }
+
+    button.request-invite{
+        width: 50%;
+        height: 7rem;
+    }
+
+    div#info{
+        padding: 5rem 5rem;
+        text-align: center;
+    }
+
+    div.online-banking, div.simple-budgeting, div.fast-onboarding, div.open-api{
+        width: 100%;
+    }
+
+    div#articles{
+        padding: 5rem 5rem;
+        text-align: center;
+    }
+
+    div.article-1,div.article-2,div.article-3,div.article-4{
+        width: 100%;
+        text-align: left;
+    }
+
+    div.article-1 img, div.article-1 img,div.article-2 img,div.article-3 img,div.article-4 img{
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+        min-height: 40rem;
+        max-height: 50rem;
+        padding-top: 10rem;
+    }
+
+    .blurb, .author,.title{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+   
+    div#footer{
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+    }
+
+    div.pages{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+    }
+
+    div.socials{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+
+    div.pages a{
+        text-align: center;
+        line-height: 4rem;
+    }
+
+    div.copyright{
+        display: flex;
+        flex-flow: column;
+    }
+
+    div.copyright button{
+        margin-bottom: 0;
+        margin: auto;
+        margin-top: 3rem;
+    }
+
+}
