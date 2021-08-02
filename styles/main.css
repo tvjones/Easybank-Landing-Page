@@ -42,8 +42,15 @@ div#nav-bar a{
 
 }
 
-img.hamburger-menu{
+
+svg.hamburger-menu{
     display: none;
+    cursor: pointer;
+}
+
+svg.close-icon{
+    display: none;
+    cursor: pointer;
 }
 
 div#nav-bar nav{
@@ -231,19 +238,26 @@ div.pages{
 div.pages a{
     color: hsl(233, 8%, 62%);
     font-size: 1.5em;
-    width: 100%;
+    width: max-content;
+    margin: auto;
 }
 
 div.social-links svg{
    padding-top: 5rem;
-   height: 7rem;
-   width: 3rem;
+   height: auto;
+   width: auto;
    padding-right: 1rem;
-   fill:  hsl(136, 65%, 51%);
+   fill: white;
 }
 
+div.social-links svg:hover{
+    fill: hsl(136, 65%, 51%);
+ }
+ 
 
-
+ div.pages a:hover{
+    color: hsl(136, 65%, 51%);;
+}
 
 .copyright button{
     position: relative;
@@ -256,28 +270,34 @@ div.social-links svg{
     font-size: 1em;
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:1100px){
     
     html{
         font-size: 5px;
         width: 100%;
-        
     }
 
+    svg.hamburger-menu{
+        display: flex;
+    }
+
+    svg.show-hamburger-icon{
+        display: none;  
+    }
+    svg.close-icon{
+        display: none;
+        cursor: pointer;
+    }
+
+    svg.show-close-icon{
+        display: flex;  
+    }
+
+  
     body{
         width: 100%;
     }
     
-    div#nav-bar{
-        padding: 5rem;
-    }
-
-    img.hamburger-menu{
-        display: flex;
-        cursor: pointer;
-    }
-
-  
     div#nav-bar nav li a{
         line-height: 10rem;
         color: hsl(233, 26%, 24%);
@@ -285,6 +305,8 @@ div.social-links svg{
 
     div#nav-bar nav{
         width: 80%;
+        height: auto;
+        top: 20%;
         margin: auto;
         position: absolute;
     }
@@ -302,6 +324,9 @@ div.social-links svg{
         -moz-box-shadow: 10px 128px 232px -6px rgba(66,66,66,0.75);
     }
 
+    div#nav-bar nav ul.mobile{
+        display: block;
+    }
     div#nav-bar button{
         display: none;
     }
@@ -409,157 +434,11 @@ div.social-links svg{
 
 }
 
-@media screen and (max-width:900px) and (min-width:700px) {
+@media screen and (max-width:1100px) and (min-width:700px) {
     
     html{
         font-size: 10px;
-        width: 100%;
-        
-    }
-
-    body{
-        width: 100%;
-    }
-    
-
-   
-    div#nav-bar{
-        padding: 5rem;
-    }
-
-    img.hamburger-menu{
-        display: block;
-        cursor: pointer;
-    }
-
-    div#nav-bar nav li a{
-        line-height: 10rem;
-        color: hsl(233, 26%, 24%);
-    }
-
-    div#nav-bar nav{
-        width: 80%;
-        margin: auto;
-        position: absolute;
-    }
-
-    div#nav-bar nav ul{
-        display: none;
-        position: relative;
-        top: 60%;
-        height: auto;
-        padding: 3rem;
-        text-align: center;
-        background-color: white;
-        box-shadow: 10px 128px 232px -6px rgba(66,66,66,0.75);
-        -webkit-box-shadow: 10px 128px 232px -6px rgba(66,66,66,0.75);
-        -moz-box-shadow: 10px 128px 232px -6px rgba(66,66,66,0.75);
-    }
-
-    div#nav-bar button{
-        display: none;
-    }
-
-
-    div#intro, div.info-options, div.article-options {
-        display: flex;
-        flex-flow: column;
-    }
-
-  
-
-    div.description{
-        padding: 5rem 5rem;
-        width: 100%;
-        text-align: center;
-        order: 2;
-    }
-
-    div.mock-up{
-        width: 100%;
-        background-image: url(/images/bg-intro-mobile.svg);
-    }
-
-    .mock-up img{
-        position: relative;
-        height: 100%;
-        width: 100%;
-        float: none;
-        padding-left:5%;
-        padding-right: 5%;
-        bottom:30%
-    }
-
-    button.request-invite{
-        width: 50%;
-        height: 7rem;
-    }
-
-    div#info{
-        padding: 5rem 5rem;
-        text-align: center;
-    }
-
-    div.online-banking, div.simple-budgeting, div.fast-onboarding, div.open-api{
-        width: 100%;
-    }
-
-    div#articles{
-        padding: 5rem 5rem;
-        text-align: center;
-    }
-
-    div.article-1,div.article-2,div.article-3,div.article-4{
-        width: 100%;
-        text-align: left;
-    }
-
-    div.article-1 img, div.article-1 img,div.article-2 img,div.article-3 img,div.article-4 img{
-        padding-left: 5%;
-        padding-right: 5%;
-        width: 100%;
-        min-height: 40rem;
-        max-height: 50rem;
-        padding-top: 10rem;
-    }
-
-    .blurb, .author,.title{
-        padding-left: 15%;
-        padding-right: 15%;
-    }
-   
-    div#footer{
-        display: flex;
-        flex-flow: column;
-        margin: auto;
-    }
-
-    div.pages{
-        display: flex;
-        flex-flow: column;
-        width: 100%;
-    }
-
-    div.socials{
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-
-    div.pages a{
-        text-align: center;
-        line-height: 4rem;
-    }
-
-    div.copyright{
-        display: flex;
-        flex-flow: column;
-    }
-
-    div.copyright button{
-        margin-bottom: 0;
-        margin: auto;
-        margin-top: 3rem;
+        width: 100%;  
     }
 
 }
