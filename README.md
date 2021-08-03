@@ -33,12 +33,12 @@ Users should be able to:
 
 ### What I learned
 
-I learnt how to utilise the JavaScript toggle method to my advantage when configuring the mobil hamburger menu. I also polished my CSS skills as well as learnt a few new tricks such as how to manipulate SVG elements.
+I learnt how to utilise the JavaScript toggle method to my advantage when configuring the mobile hamburger menu. I also polished my CSS skills as well as learnt a few new tricks such as how to manipulate SVG elements.
 
 
 
 ## Author
 
-Taye-Vaughn Jones
-LinkedIn - https://www.linkedin.com/in/taye-vaughn-jones-a1984a215/
+- Taye-Vaughn Jones
+- LinkedIn - https://www.linkedin.com/in/taye-vaughn-jones-a1984a215/
 
