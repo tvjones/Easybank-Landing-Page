@@ -113,7 +113,7 @@ div.description h1{
 
 
 div.mock-up{
-    background-image: url("/images/bg-intro-desktop.svg");
+    background-image: url("./images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
     width: 60%;
     float: right;
@@ -347,7 +347,7 @@ div.social-links svg:hover{
 
     div.mock-up{
         width: 100%;
-        background-image: url(/images/bg-intro-mobile.svg);
+        background-image: url("./images/bg-intro-mobile.svg");
     }
 
     .mock-up img{
