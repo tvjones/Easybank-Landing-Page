@@ -1,5 +1,7 @@
 # Frontend Mentor - Easybank landing page solution
 
+Link to live site: https://cocky-mcnulty-b44838.netlify.app
+
 This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN)
 
 ## Table of contents
